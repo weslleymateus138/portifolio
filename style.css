@@ -1,0 +1,485 @@
+/* ESTILO GERAL */
+* {
+    padding: 0;
+    margin: 0;
+    color: #333; /* Cor de texto escura para contraste com fundo claro */
+    font-family: 'Arial', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff; /* Fundo branco */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+body a {
+    transition: transform 0.3s ease;
+}
+
+body a:hover {
+    transform: scale(1.02);
+}
+
+p {
+    font-size: 0.9rem;
+    color: #333; /* Cor de texto escura */
+    margin-top: 1.1rem;
+}
+
+body h3 {
+    font-size: 1.3rem;
+}
+
+/* MENU-HORIZONTAL */
+.menuhorizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background-color: #f8f9fa; /* Fundo claro */
+    align-items: center;
+    padding: 0 60px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.menu-nick {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.menu-options {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuhorizontal h3 {
+    font-size: 22px;
+    color: #333; /* Cor de texto escura */
+}
+
+.menu-options li, a {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: black; /* Cor de link azul */
+}
+
+.menu-options li {
+    transition: transform 0.3s ease;
+}
+
+.menu-options li:hover {
+    transform: scale(1);
+}
+
+/* COMEÇO DO SITE */
+.comeco-principal {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 570px;
+    width: 100%;
+    align-items: center;
+    text-align: left;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+.comeco-principal button a {
+    color: black; /* Cor de texto do botão */
+}
+
+.comeco-apresentacao h3 {
+    line-height: 30px;
+    font-size: 31px;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.typing-effect {
+    font-family: monospace;
+    overflow: hidden;
+    border-right: .15em solid orange; /* Você pode ajustar a cor do cursor */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .10em;
+    animation: typing 2.5s steps(30, end);
+}
+
+.comeco-apresentacao p {
+    margin: 20px 0;
+    line-height: 20px;
+    color: #333; /* Cor de texto escura */
+}
+
+.comeco-apresentacao span {
+    font-size: 40px;
+}
+
+/* ESTILO DA IMAGEM DO COMEÇO DO SITE */
+.efeito-legal {
+    height: 100%;
+    width: 42%;
+    background-color: #f0f0f0; /* Fundo claro */
+    display: inline-block;
+    position: relative;
+}
+
+.efeito-legal img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 90%);
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 90%);
+}
+
+/* BOTÕES DO COMEÇO DO SITE */
+.btn-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20rem;
+    gap: 10px;
+}
+
+.btn-secundario {
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    background-color: #429dff; /* Cor do botão */
+    color: #fff; /* Cor do texto do botão */
+    transition: transform 0.3s ease;
+    color: black;
+}
+
+.btn-secundario:hover {
+    transform: scale(1.05);
+}
+
+.btn-secundario a {
+    color: #fff; /* Cor do link dentro do botão */
+}
+
+/* ESTILO DO SOBRE MIM */
+.sobre-principal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+#title {
+    font-size: 20px;
+    color: #333; /* Cor de texto escura */
+}
+
+.sobre-secundario {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.links-box {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.links-box .iconbox {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9ecef; /* Fundo claro */
+    border: none;
+}
+
+.links-box i {
+    font-size: 25px;
+    color: #333; /* Cor de ícone escura */
+}
+
+.links-box a {
+    color: #429dff; /* Cor de link */
+}
+
+/* ESTILO DOS PROJETOS */
+.projetos-principal {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+.projetos-secundario {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.projetos-terceiro {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 400px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #f8f9fa; /* Fundo claro */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projetos-terceiro:hover {
+    box-shadow: 0 0 3px 0 #429dff; /* Sombra azul */
+    transform: scale(1.02);
+}
+
+.projetos-terceiro img {
+    width: 95%;
+    height: 55%;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.projetos-terceiro img:hover {
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+.projetos-terceiro button {
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #429dff; /* Fundo azul */
+    color: #fff; /* Cor de texto */
+    width: 60%;
+    height: 7%;
+    border: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.projetos-terceiro button:hover {
+    transform: scale(1.05);
+    background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+.projetos-terceiro button:hover a {
+    color: #fff; /* Cor de texto */
+}
+
+.projetos-terceiro p {
+    color: #666; /* Cor de texto cinza */
+}
+
+.projetos-terceiro button a i {
+    height: 50px;
+    width: 15px;
+    color: inherit; /* Herda a cor do botão */
+}
+
+/* ESTILO DOS SERVIÇOS */
+.servicos-principal {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 11rem;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+.servicos-secundario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.servicos-terceiro {
+    display: flex;
+    height: 70%;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #f8f9fa; /* Fundo claro */
+    padding: 0 40px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicos-terceiro:hover {
+    box-shadow: 0 0 3px 0 #429dff; /* Sombra azul */
+    transform: scale(1.02);
+}
+
+.servicos-terceiro i {
+    font-size: 4rem;
+    color: #429dff; /* Cor de ícone azul */
+}
+
+/* ESTILO DAS MINHAS HABILIDADES */
+.skill-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 11rem;
+    width: 100%;
+    height: 500px;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+.titulo i {
+    font-size: 8rem;
+    color: #429dff; /* Cor de ícone azul */
+}
+
+.skill-secundario {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.skill-terceiro {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f8f9fa; /* Fundo claro */
+    width: 13%;
+    height: 50%;
+    border-radius: 20px;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+
+.skill-terceiro i {
+    font-size: 4rem;
+    color: #429dff; /* Cor de ícone azul */
+}
+
+.skill-terceiro p {
+    font-size: 1rem;
+    color: #333; /* Cor de texto escura */
+}
+
+/* ESTILO DO FOOTER */
+footer {
+    display: flex;
+    padding: 10px 2%;
+    background-color: #f8f9fa; /* Fundo claro */
+    border-radius: 50px;
+    height: 60px;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    box-sizing: border-box;
+    margin-top: 10rem;
+}
+
+footer .btn-social a {
+    align-items: center;
+    text-align: center;
+}
+
+footer .btn-social {
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.btn-social i {
+    font-size: 1.5rem;
+    color: #429dff; /* Cor de ícone azul */
+}
+
+/* BOTÃO PARA O TOPO */
+.to-top {
+    position: fixed;
+    top: 90%;
+    left: 94%;
+    transition: .2s;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    background-color: white; /* Fundo azul */
+    color: #fff; /* Cor do texto */
+    border-radius: 50%;
+}
+
+.to-top:hover {
+    transform: scale(1.2);
+}
+
+.to-top a i {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+}
