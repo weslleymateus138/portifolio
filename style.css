@@ -16,6 +16,7 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 body a {
@@ -278,17 +279,12 @@ body h3 {
 }
 
 .projetos-terceiro img {
-    width: 95%;
-    height: 55%;
+    width: 100%;
+    height: 60%;
     border-radius: 20px;
     cursor: pointer;
     opacity: 0.7;
     transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.projetos-terceiro img:hover {
-    transform: scale(1.03);
-    opacity: 1;
 }
 
 .projetos-terceiro button {
@@ -386,7 +382,7 @@ body h3 {
 }
 
 .titulo i {
-    font-size: 8rem;
+    font-size: 5rem;
     color: #429dff; /* Cor de ícone azul */
 }
 
@@ -414,7 +410,7 @@ body h3 {
 }
 
 .skill-terceiro i {
-    font-size: 4rem;
+    font-size: 3rem;
     color: #429dff; /* Cor de ícone azul */
 }
 
@@ -483,3 +479,99 @@ footer .btn-social {
     font-size: 20px;
     border-radius: 50%;
 }
+
+@media screen and (max-width: 1200px){
+    .efeito-legal{
+        display: none;
+    }
+
+    .comeco-principal{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .comeco-secundario{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .menu-options {
+        display: flex;
+        width: 51%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sobre-principal{
+        width: 100%;
+        padding: 0;
+    }
+
+    .projetos-principal{
+        height: 900px;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .projetos-secundario {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        margin-top: 20px;
+    }
+
+    .projetos-terceiro{
+        border: 1px solid;
+        padding: 10px;
+        width: 50%;
+        height: 500px;
+    }
+
+    .skill-secundario{
+        width: 100%;
+    }
+
+    .servicos-principal{
+        margin-top: 21rem;
+        gap: 2rem;
+        height: 800px;
+    }
+
+    .servicos-secundario{
+        flex-direction: column;
+    }
+
+    .servicos-terceiro{
+        width: 70%;
+    }
+
+    .skill-principal{
+        padding: 0;
+    }
+
+    .skill-principal .titulo{
+        margin-top: 20px;
+    }
+
+    .skill-secundario{
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .skill-terceiro{
+        width: 20%;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    }
