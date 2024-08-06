@@ -6,7 +6,7 @@
     font-family: 'Arial', sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -74,7 +74,7 @@ body h3 {
     list-style-type: none;
     text-decoration: none;
     font-size: 0.8rem;
-    color: black; /* Cor de link azul */
+    color: black; /* Cor de link preta */
 }
 
 .menu-options li {
@@ -169,7 +169,10 @@ body h3 {
     background-color: #429dff; /* Cor do botão */
     color: #fff; /* Cor do texto do botão */
     transition: transform 0.3s ease;
-    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .btn-secundario:hover {
@@ -305,6 +308,11 @@ body h3 {
 
 .projetos-terceiro button:hover a {
     color: #fff; /* Cor de texto */
+}
+
+.btn-secundario i{
+    color: #fff;
+    margin-left: 5px;
 }
 
 .projetos-terceiro p {
@@ -464,7 +472,7 @@ footer .btn-social {
     box-sizing: border-box;
     text-align: center;
     align-items: center;
-    background-color: white; /* Fundo azul */
+    background-color: white; /* Fundo branco */
     color: #fff; /* Cor do texto */
     border-radius: 50%;
 }
@@ -480,38 +488,47 @@ footer .btn-social {
     border-radius: 50%;
 }
 
-@media screen and (max-width: 1200px){
-    .efeito-legal{
+@media screen and (max-width: 1200px) {
+    .efeito-legal {
         display: none;
     }
 
-    .comeco-principal{
+    .comeco-principal {
         align-items: center;
         text-align: center;
         justify-content: center;
     }
 
-    .comeco-secundario{
+    .comeco-secundario {
         display: flex;
         align-items: center;
         flex-direction: column;
     }
 
-
-    .menu-options {
+    .menuhorizontal{
         display: flex;
-        width: 51%;
-        height: 100%;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .sobre-principal{
-        width: 100%;
+        justify-content: center;
         padding: 0;
     }
 
-    .projetos-principal{
+    .menu-options {
+       display: none;
+    }
+
+    .sobre-principal {
+        height: 800px;
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 300px;
+        padding: 0;
+    }
+
+    .sobre-secundario{
+        flex-direction: column;
+        height:100%;
+    }
+
+    .projetos-principal {
         height: 900px;
         padding: 0;
         box-sizing: border-box;
@@ -526,52 +543,62 @@ footer .btn-social {
         margin-top: 20px;
     }
 
-    .projetos-terceiro{
+    .projetos-terceiro {
         border: 1px solid;
         padding: 10px;
-        width: 50%;
-        height: 500px;
+        width: 70%;
+        height: 400px;
     }
 
-    .skill-secundario{
+    .skill-secundario {
         width: 100%;
     }
 
-    .servicos-principal{
+    .servicos-principal {
         margin-top: 21rem;
         gap: 2rem;
         height: 800px;
     }
 
-    .servicos-secundario{
+    .servicos-secundario {
         flex-direction: column;
     }
 
-    .servicos-terceiro{
+    .servicos-terceiro {
         width: 70%;
     }
 
-    .skill-principal{
+    .skill-principal {
         padding: 0;
     }
 
-    .skill-principal .titulo{
+    .skill-principal .titulo {
         margin-top: 20px;
     }
 
-    .skill-secundario{
+    .skill-secundario {
         width: 100%;
         justify-content: space-between;
         padding: 0 20px;
         box-sizing: border-box;
     }
 
-    .skill-terceiro{
+    .skill-terceiro {
         width: 20%;
     }
 
-    footer{
-        width: 100%;
+    footer {
+        width: 90%;
+        height: 150px;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
     }
 
+    footer .btn-social{
+        justify-content: center;
+        width: 100%;
     }
+}
